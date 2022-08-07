@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8bfd733f-918c-404b-bfa3-65cc58f6e6d8" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EDWebApi/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EDWebApi/build.gradle.kts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EDWebApi/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EDWebApi/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EDWebApi/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EDWebApi/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EDWebApi/settings.gradle.kts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EDWebApi/src/main/kotlin/com/easydiagrams/edwebapi/EdWebApiApplication.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EDWebApi/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EDWebApi/src/test/kotlin/com/easydiagrams/edwebapi/EdWebApiApplicationTests.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EDWebApp/.eslintignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EDWebApp/.eslintrc.cjs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EDWebApp/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EDWebApp/.npmrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EDWebApp/.prettierignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EDWebApp/.prettierrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EDWebApp/EDWebApp.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EDWebApp/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EDWebApp/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EDWebApp/postcss.config.cjs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EDWebApp/src/app.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EDWebApp/src/app.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EDWebApp/src/routes/index.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EDWebApp/src/shared/styles/app.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EDWebApp/src/shared/styles/base/colors.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EDWebApp/src/shared/styles/components/containers.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EDWebApp/src/shared/styles/components/inputs.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EDWebApp/src/shared/styles/components/molecules.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EDWebApp/src/shared/styles/components/text.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EDWebApp/static/favicon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EDWebApp/svelte.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EDWebApp/tailwind.config.cjs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EDWebApp/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EDWebApp/vite.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EasyDiagrams.iml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$/EDWebApi">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MacroExpansionManager">
+    <option name="directoryName" value="852mcjif" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2D0KSPWZNqufKqk99qT8RTqqARD" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "dart.analysis.tool.window.visible": "false",
+    "jdk.selected.JAVA_MODULE": "17",
+    "last_opened_file_path": "/home/kamil/IdeaProjects/EasyDiagrams/EDWebApp/src/shared",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "show.migrate.to.gradle.popup": "false",
+    "spring.configuration.checksum": "3c40ca1f267ab5eb6950130b1c10ae22",
+    "ts.external.directory.path": "/home/kamil/IdeaProjects/EasyDiagrams/EDWebApp/node_modules/typescript/lib"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/EDWebApp/src/shared" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/EDWebApp/src/shared/styles" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="EdWebApiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="EDWebApi.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.easydiagrams.edwebapi.EdWebApiApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8bfd733f-918c-404b-bfa3-65cc58f6e6d8" name="Changes" comment="" />
+      <created>1659830563741</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1659830563741</updated>
+      <workItem from="1659830565072" duration="1901000" />
+      <workItem from="1659867603725" duration="7914000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
