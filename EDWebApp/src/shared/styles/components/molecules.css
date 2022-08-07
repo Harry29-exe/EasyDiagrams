@@ -6,13 +6,12 @@
 @layer components {
 
     .navbar {
-        @apply w-full h-16 h-stack p-4 pl-0 z-50;
-        @apply bg-accent-l3 text-2xl font-bold text-white relative shadow-lg;
+        @apply w-full h-14 h-stack p-4 pl-0 z-50;
+        @apply text-2xl font-bold relative shadow-lg;
     }
 
-    .navbar-light {
-        @apply w-full h-16 h-stack p-4 pl-0 z-50;
-        @apply bg-primary-600 text-2xl font-bold text-white relative shadow-lg;
+    .side-panel {
+        @apply w-20 h-full flex-grow v-stack p-2 z-20 h-full relative;
+        @apply shadow-lg;
     }
-
 }

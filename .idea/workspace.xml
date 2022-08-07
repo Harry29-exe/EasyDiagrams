@@ -5,48 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8bfd733f-918c-404b-bfa3-65cc58f6e6d8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EDWebApi/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EDWebApi/build.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EDWebApi/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EDWebApi/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EDWebApi/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EDWebApi/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EDWebApi/settings.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EDWebApi/src/main/kotlin/com/easydiagrams/edwebapi/EdWebApiApplication.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EDWebApi/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EDWebApi/src/test/kotlin/com/easydiagrams/edwebapi/EdWebApiApplicationTests.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EDWebApp/.eslintignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EDWebApp/.eslintrc.cjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EDWebApp/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EDWebApp/.npmrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EDWebApp/.prettierignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EDWebApp/.prettierrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EDWebApp/EDWebApp.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EDWebApp/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EDWebApp/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EDWebApp/postcss.config.cjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EDWebApp/src/app.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EDWebApp/src/app.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EDWebApp/src/routes/index.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EDWebApp/src/shared/styles/app.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EDWebApp/src/shared/styles/base/colors.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EDWebApp/src/shared/styles/components/containers.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EDWebApp/src/shared/styles/components/inputs.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EDWebApp/src/shared/styles/components/molecules.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EDWebApp/src/shared/styles/components/text.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EDWebApp/static/favicon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EDWebApp/svelte.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EDWebApp/tailwind.config.cjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EDWebApp/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EDWebApp/vite.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EasyDiagrams.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EDWebApp/src/module/editor/EditorStore.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EDWebApp/src/module/editor/components/EditorSidePanel.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EDWebApp/src/routes/__layout.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EDWebApp/src/routes/editor/index.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EDWebApp/src/shared/components/Navbar.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EDWebApp/src/shared/stores/AbstractStore.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EDWebApp/src/shared/styles/base/text.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EDWebApp/src/shared/styles/utils/shadows.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EDWebApp/src/app.html" beforeDir="false" afterPath="$PROJECT_DIR$/EDWebApp/src/app.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EDWebApp/src/routes/index.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/EDWebApp/src/routes/index.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EDWebApp/src/shared/styles/base/colors.css" beforeDir="false" afterPath="$PROJECT_DIR$/EDWebApp/src/shared/styles/base/colors.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EDWebApp/src/shared/styles/components/molecules.css" beforeDir="false" afterPath="$PROJECT_DIR$/EDWebApp/src/shared/styles/components/molecules.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,6 +40,18 @@
         </projects_view>
       </state>
     </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="__layout" />
+        <option value="index" />
+        <option value="TypeScript File" />
+        <option value="EditorSidePanel" />
+        <option value="Nabar" />
+        <option value="CSS File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -94,6 +77,7 @@
     "dart.analysis.tool.window.visible": "false",
     "jdk.selected.JAVA_MODULE": "17",
     "last_opened_file_path": "/home/kamil/IdeaProjects/EasyDiagrams/EDWebApp/src/shared",
+    "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -134,12 +118,24 @@
       <option name="presentableId" value="Default" />
       <updated>1659830563741</updated>
       <workItem from="1659830565072" duration="1901000" />
-      <workItem from="1659867603725" duration="7914000" />
+      <workItem from="1659867603725" duration="16072000" />
     </task>
+    <task id="LOCAL-00001" summary="initial module settup">
+      <created>1659880794418</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1659880794418</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="initial module settup" />
+    <option name="LAST_COMMIT_MESSAGE" value="initial module settup" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

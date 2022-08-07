@@ -22,16 +22,16 @@
     }
 
     .bg-color-l1 {
-        @apply bg-gray-100 dark:bg-gray-600;
+        @apply bg-gray-50 dark:bg-gray-600;
     }
     .bg-color-l2 {
-        @apply bg-gray-200 dark:bg-gray-700;
+        @apply bg-gray-100 dark:bg-gray-700;
     }
     .bg-color-l3 {
-        @apply bg-gray-300 dark:bg-gray-800;
+        @apply bg-gray-200 dark:bg-gray-800;
     }
     .bg-color-l4 {
-        @apply bg-gray-400 dark:bg-gray-900;
+        @apply bg-gray-300 dark:bg-gray-900;
     }
 
     .border-color {
