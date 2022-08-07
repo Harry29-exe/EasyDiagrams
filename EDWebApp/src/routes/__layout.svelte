@@ -19,11 +19,13 @@
         }
     })
 
+    let navbarEnabled = true;
 </script>
 
-<div class="relative h-[100%] ">
+<div class="relative h-full">
+    {#if navbarEnabled}
     <Navbar></Navbar>
+    {/if}
 
     <slot></slot>
-    <div class="w-1 h-[2000px]"></div>
 </div>

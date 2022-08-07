@@ -4,5 +4,4 @@ import EditorSidePanel from "../../module/editor/components/EditorSidePanel.svel
 </script>
 
 <EditorSidePanel>
-
 </EditorSidePanel>

@@ -1,17 +1,18 @@
 @import "../base/colors.css";
 @import "./containers.css";
+@import "../utils/shadows.css";
 
 @tailwind components;
 
 @layer components {
 
     .navbar {
-        @apply w-full h-14 h-stack p-4 pl-0 z-50;
+        @apply h-14 flex flex-row items-start p-4 pl-0 z-50;
         @apply text-2xl font-bold relative shadow-lg;
     }
 
     .side-panel {
-        @apply w-20 h-full flex-grow v-stack p-2 z-20 h-full relative;
-        @apply shadow-lg;
+        @apply flex-grow v-stack p-2 z-20 h-full relative;
+        @apply shadow-dark-md;
     }
 }

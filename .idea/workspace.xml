@@ -5,19 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8bfd733f-918c-404b-bfa3-65cc58f6e6d8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/EDWebApp/src/module/editor/EditorStore.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EDWebApp/src/module/editor/components/EditorSidePanel.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EDWebApp/src/routes/__layout.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EDWebApp/src/routes/editor/index.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EDWebApp/src/shared/components/Navbar.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EDWebApp/src/shared/stores/AbstractStore.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EDWebApp/src/shared/styles/base/text.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EDWebApp/src/shared/styles/utils/shadows.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EDWebApp/src/app.html" beforeDir="false" afterPath="$PROJECT_DIR$/EDWebApp/src/app.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EDWebApp/src/routes/index.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/EDWebApp/src/routes/index.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EDWebApp/src/shared/styles/base/colors.css" beforeDir="false" afterPath="$PROJECT_DIR$/EDWebApp/src/shared/styles/base/colors.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EDWebApp/src/module/editor/components/EditorSidePanel.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/EDWebApp/src/module/editor/components/EditorSidePanel.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EDWebApp/src/routes/__layout.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/EDWebApp/src/routes/__layout.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EDWebApp/src/routes/editor/index.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/EDWebApp/src/routes/editor/index.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EDWebApp/src/shared/components/Navbar.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/EDWebApp/src/shared/components/Navbar.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EDWebApp/src/shared/styles/components/inputs.css" beforeDir="false" afterPath="$PROJECT_DIR$/EDWebApp/src/shared/styles/components/inputs.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EDWebApp/src/shared/styles/components/molecules.css" beforeDir="false" afterPath="$PROJECT_DIR$/EDWebApp/src/shared/styles/components/molecules.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EDWebApp/src/shared/styles/utils/shadows.css" beforeDir="false" afterPath="$PROJECT_DIR$/EDWebApp/src/shared/styles/utils/shadows.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,7 +114,7 @@
       <option name="presentableId" value="Default" />
       <updated>1659830563741</updated>
       <workItem from="1659830565072" duration="1901000" />
-      <workItem from="1659867603725" duration="16072000" />
+      <workItem from="1659867603725" duration="21117000" />
     </task>
     <task id="LOCAL-00001" summary="initial module settup">
       <created>1659880794418</created>
@@ -127,7 +123,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659880794418</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="added better styling, resizable navbar and side panel">
+      <created>1659906445576</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1659906445576</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -135,7 +138,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial module settup" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial module settup" />
+    <MESSAGE value="added better styling, resizable navbar and side panel" />
+    <option name="LAST_COMMIT_MESSAGE" value="added better styling, resizable navbar and side panel" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

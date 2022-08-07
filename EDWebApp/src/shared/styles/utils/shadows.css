@@ -7,12 +7,14 @@
     }
 
     .shadow-dark-md {
-        box-shadow: 1px 1px 2px 3px #00000099;
+        @apply shadow-[1px_1px_3px_1px_rgba(0,0,0,0.2)]
+        dark:shadow-[1px_1px_3px_1px_rgba(0,0,0,0.4)];
     }
 
     .shadow-dark-lg {
         /*box-shadow: 2px 2px 3px 3px #00000065;*/
-        @apply shadow-[2px_2px_3px_3px_rgba(0,0,0,0.2)] dark:shadow-[2px_2px_3px_3px_rgba(0,0,0,0.4)];
+        @apply shadow-[2px_2px_3px_3px_rgba(0,0,0,0.2)]
+        dark:shadow-[2px_2px_3px_3px_rgba(0,0,0,0.4)];
     }
 
 }
