@@ -5,15 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8bfd733f-918c-404b-bfa3-65cc58f6e6d8" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/EDWebApp/src/module/editor/EditorState.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EDWebApp/src/module/editor/components/Editor.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EDWebApp/src/module/editor/logic/Element.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EDWebApp/src/module/editor/logic/ElementType.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EDWebApp/src/shared/stores/PreferencesStore.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EDWebApp/src/app.html" beforeDir="false" afterPath="$PROJECT_DIR$/EDWebApp/src/app.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EDWebApp/src/module/editor/components/EditorSidePanel.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/EDWebApp/src/module/editor/components/EditorSidePanel.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EDWebApp/src/module/editor/EditorStore.ts" beforeDir="false" afterPath="$PROJECT_DIR$/EDWebApp/src/module/editor/EditorsStore.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EDWebApp/src/routes/__layout.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/EDWebApp/src/routes/__layout.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EDWebApp/src/routes/editor/index.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/EDWebApp/src/routes/editor/index.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EDWebApp/src/shared/components/Navbar.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/EDWebApp/src/shared/components/Navbar.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EDWebApp/src/shared/styles/components/inputs.css" beforeDir="false" afterPath="$PROJECT_DIR$/EDWebApp/src/shared/styles/components/inputs.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EDWebApp/src/shared/styles/components/molecules.css" beforeDir="false" afterPath="$PROJECT_DIR$/EDWebApp/src/shared/styles/components/molecules.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EDWebApp/src/shared/styles/utils/shadows.css" beforeDir="false" afterPath="$PROJECT_DIR$/EDWebApp/src/shared/styles/utils/shadows.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,10 +44,11 @@
       <list>
         <option value="__layout" />
         <option value="index" />
-        <option value="TypeScript File" />
         <option value="EditorSidePanel" />
         <option value="Nabar" />
         <option value="CSS File" />
+        <option value="Editor" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -64,35 +67,37 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "dart.analysis.tool.window.visible": "false",
-    "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "/home/kamil/IdeaProjects/EasyDiagrams/EDWebApp/src/shared",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "show.migrate.to.gradle.popup": "false",
-    "spring.configuration.checksum": "3c40ca1f267ab5eb6950130b1c10ae22",
-    "ts.external.directory.path": "/home/kamil/IdeaProjects/EasyDiagrams/EDWebApp/node_modules/typescript/lib"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/kamil/IdeaProjects/EasyDiagrams/EDWebApp/src/shared&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;3c40ca1f267ab5eb6950130b1c10ae22&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/home/kamil/IdeaProjects/EasyDiagrams/EDWebApp/node_modules/typescript/lib&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/EDWebApp/src/shared" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/EDWebApp/src/module/editor" />
+      <recent name="$PROJECT_DIR$/EDWebApp/src/module/editor/state" />
       <recent name="$PROJECT_DIR$/EDWebApp/src/shared/styles" />
     </key>
   </component>
@@ -114,7 +119,11 @@
       <option name="presentableId" value="Default" />
       <updated>1659830563741</updated>
       <workItem from="1659830565072" duration="1901000" />
-      <workItem from="1659867603725" duration="21117000" />
+      <workItem from="1659867603725" duration="21234000" />
+      <workItem from="1659973909550" duration="2399000" />
+      <workItem from="1659994304852" duration="1029000" />
+      <workItem from="1660380811067" duration="672000" />
+      <workItem from="1660506256995" duration="5104000" />
     </task>
     <task id="LOCAL-00001" summary="initial module settup">
       <created>1659880794418</created>
@@ -130,7 +139,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659906445576</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="sliding side panel, animated navbar">
+      <created>1659911172641</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1659911172641</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -139,7 +155,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial module settup" />
     <MESSAGE value="added better styling, resizable navbar and side panel" />
-    <option name="LAST_COMMIT_MESSAGE" value="added better styling, resizable navbar and side panel" />
+    <MESSAGE value="sliding side panel, animated navbar" />
+    <option name="LAST_COMMIT_MESSAGE" value="sliding side panel, animated navbar" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

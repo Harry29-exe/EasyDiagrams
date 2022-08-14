@@ -3,5 +3,7 @@
 import EditorSidePanel from "../../module/editor/components/EditorSidePanel.svelte";
 </script>
 
-<EditorSidePanel>
-</EditorSidePanel>
+<div class="z-10">
+    <EditorSidePanel/>
+</div>
+

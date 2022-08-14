@@ -1,46 +1,41 @@
 <script lang="ts">
     import {goto} from "$app/navigation"
+    import {preferencesStore} from "../stores/PreferencesStore";
 
-    let themeIcon = '🌣';
     const toggleDarkMode = () => {
-        if (document.documentElement.classList.contains("dark")) {
-            document.documentElement.classList.remove('dark');
-            themeIcon = '🌣';
-            localStorage.theme = 'light'
-        } else {
-            document.documentElement.classList.add('dark');
-            themeIcon = '☽'
-            localStorage.theme = 'dark'
-        }
+        preferencesStore.switchTheme();
     }
 
-    let panelExtended = true;
+    let panelExtended;
+    $: {
+        panelExtended = !$preferencesStore.minimalNavbar
+    }
     const toggleExtended = () => {
-      panelExtended = !panelExtended;
+      preferencesStore.switchNavbar()
     }
 </script>
 
 
 <div class={`navbar bg-color-l3 text-primary-500 dark:text-primary-400 shadow-dark-lg
         ${panelExtended? ' ': 'rounded-br-2xl'} app-navbar`}
-    style={`min-width: ${panelExtended? '100%': '20%'}; width: min-content`}>
+    style={`min-width: ${panelExtended? '100%': '10%'}; width: min-content`}>
 
     <p class="link pl-2" on:click={() => goto('/')}>Home</p>
     <p class="mx-3">/</p>
     <p class="link" on:click={() => goto('/editor')}>Editor</p>
 
-    <div class="min-w-[3em] flex-grow"></div>
+    {#if panelExtended}
+        <div class="min-w-[3em] flex-grow"></div>
+    {:else}
+        <div class="w-8"></div>
+    {/if}
 
 
-    <button class="mx-1 px-1 hover:bg-color-l2 rounded-full"
-            on:click={toggleExtended}
-    >
+    <button on:click={toggleExtended} class="hover:bg-color-l2">
         {panelExtended? '<': '>'}
     </button>
-    <button class="mx-1 px-1 hover:bg-color-l2 rounded-full"
-            on:click={toggleDarkMode}
-    >
-        {themeIcon}
+    <button on:click={toggleDarkMode} class="hover:bg-color-l2">
+        {$preferencesStore.theme === 'dark'? '☽': '🌣'}
     </button>
 </div>
 
@@ -50,6 +45,6 @@
     }
 
     button {
-        @apply mx-1;
+        @apply mx-0.5 px-1.5 rounded-full;
     }
 </style>

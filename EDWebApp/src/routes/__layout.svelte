@@ -9,10 +9,13 @@
     import "../shared/styles/utils/shadows.css"
     import {onMount} from "svelte";
     import Navbar from "../shared/components/Navbar.svelte";
+    import {preferencesStore} from "../shared/stores/PreferencesStore";
 
 
     onMount(() => {
-        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        preferencesStore.reloadPreferences();
+        console.log($preferencesStore)
+        if ($preferencesStore.theme === 'dark') {
             document.documentElement.classList.add('dark')
         } else {
             document.documentElement.classList.remove('dark')
