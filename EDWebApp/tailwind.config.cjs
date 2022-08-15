@@ -10,10 +10,10 @@ module.exports = {
                 'primary-200': "#FBD38D",
                 'primary-300': "#F6AD55",
                 'primary-400': "#ED8936",
-                'primary-500': "#DD6B20",
+                'primary-500': "#dc6e26",
                 'primary-600': "#C05621",
-                'primary-700': "#9e4322",
-                'primary-800': "#903c23",
+                'primary-700': "#9C4221",
+                'primary-800': "#7B341E",
                 'primary-900': "#78321d",
 
                 'gray-50': '#F7FAFC',

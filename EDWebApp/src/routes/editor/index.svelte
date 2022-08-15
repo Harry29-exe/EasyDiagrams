@@ -32,9 +32,11 @@
         background-image: url('/Circuit Board.svg');
         background-size: 140%;
         opacity: 0.25;
+        z-index: -10;
     }
 
     .background-color {
         @apply fixed w-[100vw] h-[100vh] top-0 left-0;
+        z-index: -11;
     }
 </style>

@@ -2,6 +2,8 @@ import type {ElementType} from "./ElementType";
 
 export class DiagramElementState {
 
+    public id: number = 0;
+
     constructor(
         public startX: number,
         public startY: number,

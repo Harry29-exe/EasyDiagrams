@@ -3,12 +3,13 @@
 @layer utilities {
 
     .shadow-dark-sm {
-        box-shadow: 1px 1px 1px 2px #00000099;
+        @apply shadow-[0px_0px_2px_1px_rgba(0,0,0,0.2)]
+        dark:shadow-[0px_0px_3px_1px_rgba(0,0,0,0.4)];
     }
 
     .shadow-dark-md {
-        @apply shadow-[1px_1px_3px_1px_rgba(0,0,0,0.2)]
-        dark:shadow-[1px_1px_3px_1px_rgba(0,0,0,0.4)];
+        @apply shadow-[0px_0px_3px_2px_rgba(0,0,0,0.15)]
+        dark:shadow-[0px_0px_3px_1px_rgba(0,0,0,0.4)];
     }
 
     .shadow-dark-lg {

@@ -16,7 +16,7 @@
 </script>
 
 
-<div class={`navbar bg-color-l3 text-primary-500 dark:text-primary-400 shadow-dark-lg
+<div class={`navbar bg-color-l3 text-primary-500 dark:text-primary-400 shadow-dark-sm select-none
         ${panelExtended? ' ': 'rounded-br-2xl'} app-navbar`}
     style={`min-width: ${panelExtended? '100%': '10%'}; width: min-content`}>
 

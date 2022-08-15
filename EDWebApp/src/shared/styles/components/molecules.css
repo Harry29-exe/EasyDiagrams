@@ -7,12 +7,12 @@
 @layer components {
 
     .navbar {
-        @apply h-14 flex flex-row items-start p-4 pl-0 z-50;
-        @apply text-2xl font-bold relative shadow-lg;
+        @apply h-12 flex flex-row items-start px-4 py-2 pl-0 z-50;
+        @apply text-2xl font-bold relative shadow-sm;
     }
 
     .side-panel {
         @apply flex-grow v-stack p-2 z-20 h-full relative;
-        @apply shadow-dark-md;
+        @apply shadow-dark-sm;
     }
 }
