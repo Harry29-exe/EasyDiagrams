@@ -31,7 +31,7 @@
         @apply fixed w-[100vw] h-[100vh] top-0 left-0;
         background-image: url('/Circuit Board.svg');
         background-size: 140%;
-        opacity: 0.5;
+        opacity: 0.25;
     }
 
     .background-color {

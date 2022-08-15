@@ -5,11 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8bfd733f-918c-404b-bfa3-65cc58f6e6d8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/EDWebApp/static/Circuit Board.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EDWebApp/src/module/main/Footer.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EDWebApp/src/app.html" beforeDir="false" afterPath="$PROJECT_DIR$/EDWebApp/src/app.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EDWebApp/src/module/editor/components/EditorSidePanel.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/EDWebApp/src/module/editor/components/EditorSidePanel.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EDWebApp/src/module/editor/components/elements/UmlClassView.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/EDWebApp/src/module/editor/components/elements/UmlClassView.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EDWebApp/src/routes/editor/index.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/EDWebApp/src/routes/editor/index.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EDWebApp/src/routes/index.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/EDWebApp/src/routes/index.svelte" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +44,7 @@
         <option value="Editor" />
         <option value="UmlClassView" />
         <option value="TypeScript File" />
+        <option value="Footer" />
       </list>
     </option>
   </component>
@@ -122,7 +123,7 @@
       <workItem from="1659994304852" duration="1029000" />
       <workItem from="1660380811067" duration="672000" />
       <workItem from="1660506256995" duration="8211000" />
-      <workItem from="1660553222359" duration="4448000" />
+      <workItem from="1660553222359" duration="10748000" />
     </task>
     <task id="LOCAL-00001" summary="initial module settup">
       <created>1659880794418</created>
@@ -152,7 +153,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660514708026</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Added right side panel, added editor background">
+      <created>1660563105867</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1660563105867</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -163,7 +171,8 @@
     <MESSAGE value="added better styling, resizable navbar and side panel" />
     <MESSAGE value="sliding side panel, animated navbar" />
     <MESSAGE value="Added properties store, better minimal navbar handling" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added properties store, better minimal navbar handling" />
+    <MESSAGE value="Added right side panel, added editor background" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added right side panel, added editor background" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
