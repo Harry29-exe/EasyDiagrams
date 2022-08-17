@@ -18,6 +18,7 @@ repositories {
     mavenCentral()
 }
 
+val exposedVersion = "0.39.1"
 dependencies {
 //    implementation("org.springframework.boot:spring-boot-starter-data-jpa")
     implementation("org.springframework.boot:spring-boot-starter-security")
@@ -27,6 +28,9 @@ dependencies {
     implementation("org.jetbrains.kotlin:kotlin-reflect")
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
     implementation("org.springdoc:springdoc-openapi-ui:1.6.9")
+    implementation("org.jetbrains.exposed:exposed-core:$exposedVersion")
+    implementation("org.jetbrains.exposed:exposed-dao:$exposedVersion")
+    implementation("org.jetbrains.exposed:exposed-jdbc:$exposedVersion")
 
     developmentOnly("org.springframework.boot:spring-boot-devtools")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
