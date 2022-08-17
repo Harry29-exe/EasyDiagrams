@@ -1,0 +1,61 @@
+openapi: 3.0.3
+info:
+  title: EDWebApi
+  description: EDWebApi
+  version: 1.0.0
+servers:
+  - url: 'https'
+paths:
+  /users:
+    get:
+      tags: [User]
+      description: Returns all users
+      operationId: getAll
+      responses:
+        200:
+          description: Success
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/User'
+        401:
+          description: No permissions
+
+  /users/{id}:
+    get:
+      tags: [User]
+      description: Returns user with given uuid
+      parameters:
+        - name: 'id'
+          in: path
+          required: true
+          description: id of user that will be returned
+          schema:
+            type: integer
+      responses:
+        200:
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'
+        400:
+          description: Invalid id format
+
+
+components:
+  schemas:
+    User:
+      type: object
+      properties:
+        name:
+          type: string
+        uuid:
+          type: string
+          format: uuid
+      required:
+        - name
+        - uuid
+
