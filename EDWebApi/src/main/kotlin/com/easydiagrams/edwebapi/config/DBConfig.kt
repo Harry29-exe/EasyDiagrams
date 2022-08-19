@@ -1,12 +1,10 @@
 package com.easydiagrams.edwebapi.config
 
-import com.easydiagrams.edwebapi.user.dao.Users
-import org.jetbrains.exposed.sql.Database
-import org.jetbrains.exposed.sql.SchemaUtils
-import org.jetbrains.exposed.sql.StdOutSqlLogger
-import org.jetbrains.exposed.sql.addLogger
+import com.easydiagrams.edwebapi.user.dao.UsersTable
+import org.jetbrains.exposed.sql.*
 import org.jetbrains.exposed.sql.transactions.transaction
 import org.springframework.context.annotation.Configuration
+import java.util.*
 
 @Configuration
 class DBConfig {
@@ -23,7 +21,11 @@ class DBConfig {
 
         transaction {
             addLogger(StdOutSqlLogger)
-            SchemaUtils.create(Users)
+            SchemaUtils.create(UsersTable)
+            UsersTable.insert {
+                it[name] = "bob"
+                it[uuid] = UUID.randomUUID()
+            }
         }
     }
 
