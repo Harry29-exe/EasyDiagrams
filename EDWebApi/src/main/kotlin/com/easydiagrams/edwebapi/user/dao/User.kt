@@ -6,10 +6,10 @@ import org.jetbrains.exposed.dao.IntEntityClass
 import org.jetbrains.exposed.dao.id.EntityID
 
 class User(id: EntityID<Int>) : IntEntity(id) {
-    companion object : IntEntityClass<User>(UsersTable)
+    companion object : IntEntityClass<User>(Users)
 
-    var name by UsersTable.name
-    val uuid by UsersTable.uuid
+    var name by Users.name
+    val uuid by Users.uuid
 
     fun mapToDTO(): UserDTO {
         return UserDTO(name, uuid)
