@@ -1,6 +1,8 @@
 package com.easydiagrams.edwebapi.shared
 
-interface DaoService<DOMAIN, ID> {
+import org.yaml.snakeyaml.events.Event
+
+interface DaoService<ID : Comparable<ID>, DOMAIN : Domain<ID>> {
 
     fun get(id: ID): DOMAIN?
 

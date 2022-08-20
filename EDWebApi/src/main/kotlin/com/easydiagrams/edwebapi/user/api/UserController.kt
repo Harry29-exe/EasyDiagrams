@@ -3,7 +3,6 @@ package com.easydiagrams.edwebapi.user.api
 
 import com.easydiagrams.edwebapi.generated.api.UserApi
 import com.easydiagrams.edwebapi.generated.model.UserDTO
-import com.easydiagrams.edwebapi.user.dao.UserEntity
 import org.jetbrains.exposed.sql.StdOutSqlLogger
 import org.jetbrains.exposed.sql.addLogger
 import org.jetbrains.exposed.sql.transactions.transaction
