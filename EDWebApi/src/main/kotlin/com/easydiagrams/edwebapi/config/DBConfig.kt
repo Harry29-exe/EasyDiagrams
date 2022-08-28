@@ -21,9 +21,11 @@ class DBConfig {
 
         transaction {
             addLogger(StdOutSqlLogger)
+            SchemaUtils.drop(UsersTable)
             SchemaUtils.create(UsersTable)
             UsersTable.insert {
                 it[name] = "bob"
+                it[passwordHash] = PasswordEncoderProvider.provide().encode("123")
                 it[uuid] = UUID.randomUUID()
             }
         }

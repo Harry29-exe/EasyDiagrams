@@ -1,4 +1,5 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
+import org.openapitools.generator.gradle.plugin.tasks.GenerateTask
 
 plugins {
     id("org.springframework.boot") version "2.7.2"
@@ -52,7 +53,7 @@ tasks.withType<Test> {
     useJUnitPlatform()
 }
 
-openApiGenerate {
+tasks.withType<GenerateTask> {
     generatorName.set("kotlin-spring")
 
     inputSpec.set("$rootDir/src/main/resources/api/EDWebApi.yaml")
@@ -74,6 +75,13 @@ openApiGenerate {
             "useTags" to "true"
         )
     )
+}
+
+tasks.withType<GenerateTask> {
+    generatorName.set("typescript-fetch")
+
+    inputSpec.set("$rootDir/src/main/resources/api/EDWebApi.yaml")
+    outputDir.set("$rootDir/../EDWebApp/src/generated/")
 }
 
 flyway {

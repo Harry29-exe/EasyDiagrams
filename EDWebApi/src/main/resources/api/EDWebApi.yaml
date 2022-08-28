@@ -22,18 +22,35 @@ paths:
                   $ref: '#/components/schemas/User'
         401:
           description: No permissions
+    post:
+      tags: [User]
+      description: Create new user
+      operationId: create
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreateUser'
+        required: true
+      responses:
+        200:
+          description: Success
+        400:
+          description: Bad
 
-  /users/{id}:
+  /users/{uuid}:
     get:
       tags: [User]
       description: Returns user with given uuid
+      operationId: get
       parameters:
-        - name: 'id'
+        - name: 'uuid'
           in: path
           required: true
-          description: id of user that will be returned
+          description: uuid of user that will be returned
           schema:
-            type: integer
+            type: string
+            format: uuid
       responses:
         200:
           description: Success
@@ -43,6 +60,26 @@ paths:
                 $ref: '#/components/schemas/User'
         400:
           description: Invalid id format
+
+    delete:
+      tags: [User]
+      description: Deletes user
+      operationId: delete
+      parameters:
+        - name: 'uuid'
+          in: path
+          required: true
+          description: id of user that will be returned
+          schema:
+            type: string
+            format: uuid
+      responses:
+        200:
+          description: Success
+        400:
+          description: Bad request
+        404:
+          description: User with given UUID not found
 
 
 components:
@@ -58,4 +95,16 @@ components:
       required:
         - name
         - uuid
+
+    CreateUser:
+      type: object
+      properties:
+        name:
+          type: string
+        password:
+          type: string
+      required:
+        - name
+        - password
+
 
