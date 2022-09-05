@@ -6,20 +6,38 @@ import com.easydiagrams.edwebapi.shared.DtoMappable
 import org.springframework.security.crypto.password.PasswordEncoder
 import java.util.UUID
 
-data class UserDomain (
-    override val id: Int,
-    var name: String,
-    var passwordHash: String,
-    val uuid: UUID
-)  : Domain<Int>, DtoMappable<UserDTO> {
+class UserDomain : Domain<Int>, DtoMappable<UserDTO> {
 
-    constructor(name: String, password: String, passwordHasher: PasswordEncoder) : this(
-        0,
-        name,
-        passwordHasher.encode(password),
-        UUID.randomUUID()
+    constructor(
+        id: Int,
+        username: String,
+        name: String,
+        password: String,
+        passwordHasher: PasswordEncoder,
+        roles: MutableSet<RoleDomain> = mutableSetOf(RoleDomain.USER)
     ) {
+        this.id = id
+        this.username = username
+        this.name = name
+        this.passwordHash = passwordHasher.encode(password)
+        this.roles = roles
+    }
 
+    override val id: Int
+    val username: String
+    var name: String
+        private set
+    var passwordHash: String
+        private set
+    val uuid: UUID = UUID.randomUUID()
+    private val roles: MutableSet<RoleDomain>
+
+    fun hasRole(role: RoleDomain): Boolean {
+        return roles.contains(role)
+    }
+
+    fun updatePassword(password: String, passwordHasher: PasswordEncoder) {
+        passwordHash = passwordHasher.encode(password)
     }
 
     override fun dto(): UserDTO {

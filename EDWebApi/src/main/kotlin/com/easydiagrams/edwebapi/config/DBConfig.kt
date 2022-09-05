@@ -20,7 +20,6 @@ class DBConfig {
         println("DB connected")
 
         transaction {
-            addLogger(StdOutSqlLogger)
             SchemaUtils.drop(UsersTable)
             SchemaUtils.create(UsersTable)
             UsersTable.insert {

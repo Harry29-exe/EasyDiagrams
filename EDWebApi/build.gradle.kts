@@ -53,7 +53,7 @@ tasks.withType<Test> {
     useJUnitPlatform()
 }
 
-tasks.withType<GenerateTask> {
+tasks.register("generateKotlinServer", GenerateTask::class) {
     generatorName.set("kotlin-spring")
 
     inputSpec.set("$rootDir/src/main/resources/api/EDWebApi.yaml")
@@ -77,7 +77,7 @@ tasks.withType<GenerateTask> {
     )
 }
 
-tasks.withType<GenerateTask> {
+tasks.register("generateTypescriptClient", GenerateTask::class) {
     generatorName.set("typescript-fetch")
 
     inputSpec.set("$rootDir/src/main/resources/api/EDWebApi.yaml")

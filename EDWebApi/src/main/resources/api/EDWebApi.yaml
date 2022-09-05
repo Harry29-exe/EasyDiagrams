@@ -4,7 +4,7 @@ info:
   description: EDWebApi
   version: 1.0.0
 servers:
-  - url: 'https'
+  - url: 'http'
 paths:
   /users:
     get:
@@ -60,7 +60,6 @@ paths:
                 $ref: '#/components/schemas/User'
         400:
           description: Invalid id format
-
     delete:
       tags: [User]
       description: Deletes user
@@ -80,13 +79,121 @@ paths:
           description: Bad request
         404:
           description: User with given UUID not found
+  /diagrams:
+    get:
+      tags: [Diagram]
+      description: retrieves all users projects metadata
+      summary: retrieves all users projects metadata
+      operationId: getAllDiagrams
+      parameters:
+        - name: 'page'
+          in: query
+          required: false
+          description: page number
+          schema:
+            type: string
+            default: 0
+        - name: 'itemsPerPage'
+          in: query
+          required: false
+          description: elements per page
+          schema:
+            type: string
+            default: 10
+      responses:
+        200:
+          description: Success
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Project'
+        401:
+          description: User not logged
+    post:
+      tags: [Diagram]
+      description: create new diagram
+      summary: create new diagram
+      operationId: createDiagram
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreateProject'
+      responses:
+        200:
+          description: Success
+  /diagrams/{uuid}:
+    delete:
+      tags: [Diagram]
+      description: delete diagram
+      summary: delete diagram
+      operationId: deleteDiagram
+      parameters:
+        - name: 'uuid'
+          in: path
+          required: true
+          schema:
+            type: string
+            format: uuid
+          description: public id
+      responses:
+        200:
+          description: Success
 
+  /diagrams/{uuid}/data:
+    get:
+      tags: [DiagramData]
+      description: retrieves diagram's data
+      summary: retrieves diagram's data
+      operationId: getData
+      parameters:
+        - name: 'uuid'
+          in: path
+          description: diagram's public id
+          schema:
+            type: string
+            format: uuid
+          required: true
+      responses:
+        200:
+          description: Success
+          content:
+            application/octet-stream:
+              schema:
+                type: string
+                format: binary
+    put:
+      tags: [DiagramData]
+      description: overrides diagram's data
+      summary: overrides diagram's data
+      operationId: updateData
+      parameters:
+        - name: 'uuid'
+          in: path
+          description: diagram's public id
+          schema:
+            type: string
+            format: uuid
+          required: true
+      requestBody:
+        content:
+          application/octet-stream:
+            schema:
+              type: string
+              format: binary
+      responses:
+        200:
+          description: Success
 
 components:
   schemas:
     User:
       type: object
       properties:
+        username:
+          type: string
         name:
           type: string
         uuid:
@@ -99,12 +206,30 @@ components:
     CreateUser:
       type: object
       properties:
+        username:
+          type: string
+          description: account name
         name:
           type: string
+          description: name visible to other users
         password:
           type: string
       required:
+        - username
         - name
         - password
 
+    Project:
+      type: object
+      properties:
+        name:
+          type: string
+        uuid:
+          type: string
+          format: uuid
 
+    CreateProject:
+      type: object
+      properties:
+        name:
+          type: string
